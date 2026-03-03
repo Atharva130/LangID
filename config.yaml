@@ -1,0 +1,21 @@
+data:
+  dataset_name: "papluca/langauge-identification"
+  max_len: 200
+
+model:
+  embedding_dim: 64
+  gru_units: 128
+  dropout: 0.3
+  num_layers: 2
+  num_classes: 20
+
+training: 
+  batch_size: 64
+  epochs: 20
+  learning_rate: 0.001
+  patience: 3
+
+paths:
+  model_save: "data/model.pt"
+  vocab_save: "data/vocab.json"
+  logs: "data/logs/"
