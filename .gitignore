@@ -1,0 +1,8 @@
+mlenv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+data/model.keras
+*.pt
+*.pth
+.env
