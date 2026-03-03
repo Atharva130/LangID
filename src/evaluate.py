@@ -47,7 +47,7 @@ def evaluate():
     ).to(device)
 
     # load the saved weights into the model
-    model.load_state_dict(torch.load(cfg['paths']['model_save'], map_location=device))
+    model.load_state_dict(torch.load(cfg['paths']['model_save'], map_location=device,weights_only=True))
     model.eval()
     print(f"Model loaded from {cfg['paths']['model_save']}")
 

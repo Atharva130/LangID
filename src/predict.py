@@ -20,7 +20,8 @@ def load_model(cfg, device):
     
     # load saved weights
     model.load_state_dict(torch.load(cfg['paths']['model_save'], 
-                                     map_location=device))
+                                     map_location=device,
+                                     weights_only=True))
     model.eval()  # disable dropout for inference
     
     return model, char2idx, idx2lang
