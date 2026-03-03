@@ -5,7 +5,7 @@ data:
 model:
   embedding_dim: 64
   gru_units: 128
-  dropout: 0.3
+  dropout: 0.4
   num_layers: 2
   num_classes: 20
 
@@ -13,7 +13,7 @@ training:
   batch_size: 64
   epochs: 20
   learning_rate: 0.001
-  patience: 3
+  patience: 5
 
 paths:
   model_save: "data/model.pt"
