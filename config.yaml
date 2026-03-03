@@ -1,5 +1,5 @@
 data:
-  dataset_name: "papluca/langauge-identification"
+  dataset_name: "papluca/language-identification"
   max_len: 200
 
 model:
