@@ -19,11 +19,11 @@ class LangIDModel(nn.Module):
 
         self.fc = nn.Linear(gru_units * 2, num_classes)
 
-def forward(self,x):
-    x = self.embeddings(x)
-    output, hidden = self.gru(x)
-    x = output[:, -1, :]
-    x = self.dropout(x)
-    x = self.fc(x)
-        
-    return x
+    def forward(self,x):
+        x = self.embedding(x)
+        output, hidden = self.gru(x)
+        x = output[:, -1, :]
+        x = self.dropout(x)
+        x = self.fc(x)
+            
+        return x
