@@ -10,9 +10,7 @@ Type any text → get the language identified instantly with confidence scores.
 Supports 20 languages including Arabic, Chinese, Japanese, Hindi, Urdu and more.
 
 ## 🎥 Demo
-```
 ![Animation](https://github.com/user-attachments/assets/ff6d7286-66cd-4b2f-854b-dbbbd64f5f90)
-```
 
 ## 🏗️ Architecture
 ```
@@ -173,4 +171,5 @@ Open `index.html` in your browser and start typing.
 - Deploy on Render with Docker for public access
 
 ---
+
 
